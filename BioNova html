@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BioNova</title>
+</head>
+
+<body>
+
+    <h1>🧬 BioNova Quiz Game</h1>
+
+    <p id="question">
+        What is the powerhouse of the cell?
+    </p>
+
+    <button onclick="checkAnswer('A')">
+        A. Mitochondria
+    </button><br><br>
+
+    <button onclick="checkAnswer('B')">
+        B. Nucleus
+    </button><br><br>
+
+    <button onclick="checkAnswer('C')">
+        C. Ribosome
+    </button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkAnswer(answer) {
+            if (answer === 'A') {
+                document.getElementById("result").innerHTML =
+                "✅ Correct!";
+            } else {
+                document.getElementById("result").innerHTML =
+                "❌ Wrong! Try again.";
+            }
+        }
+    </script>
+
+</body>
+</html>
