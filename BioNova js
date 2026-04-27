@@ -1,0 +1,10 @@
+function checkAnswer(answer) {
+    let result = document.getElementById("result");
+
+    if (answer === "A") {
+        result.innerHTML = "✅ Correct! Mitochondria is the powerhouse of the cell.";
+    } 
+    else {
+        result.innerHTML = "❌ Wrong! Try again.";
+    }
+}
